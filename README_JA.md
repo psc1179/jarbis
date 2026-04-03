@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="harness_banner.png" alt="Harness Banner" width="600">
+  <img src="jarbis_banner.png" alt="Jarbis Banner" width="600">
 </p>
 
 <p align="center">
@@ -8,10 +8,10 @@
   <img src="https://img.shields.io/badge/Claude_Code-Plugin-purple.svg" alt="Claude Code Plugin">
   <img src="https://img.shields.io/badge/Patterns-6_Architectures-orange.svg" alt="6 Architecture Patterns">
   <img src="https://img.shields.io/badge/Mode-Agent_Teams-green.svg" alt="Agent Teams">
-  <a href="https://github.com/revfactory/harness/stargazers"><img src="https://img.shields.io/github/stars/revfactory/harness?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/revfactory/jarbis/stargazers"><img src="https://img.shields.io/github/stars/revfactory/jarbis?style=social" alt="GitHub Stars"></a>
 </p>
 
-# Harness
+# Jarbis
 
 **Agent Team & Skill Architect** — Claude Code プラグイン
 
@@ -21,7 +21,7 @@
 
 ## 概要
 
-Harnessは、Claude Codeのエージェントチームシステムを活用し、複雑なタスクを専門エージェントチームに分解・統制するアーキテクチャツールです。「ハーネスを構成して」と伝えるだけで、ドメインに適したエージェント定義（`.claude/agents/`）とスキル（`.claude/skills/`）を自動生成します。
+Jarbisは、Claude Codeのエージェントチームシステムを活用し、複雑なタスクを専門エージェントチームに分解・統制するアーキテクチャツールです。「ハーネスを構成して」と伝えるだけで、ドメインに適したエージェント定義（`.claude/agents/`）とスキル（`.claude/skills/`）を自動生成します。
 
 ## 主な機能
 
@@ -52,29 +52,29 @@ Phase 6: 検証とテスト
 
 #### マーケットプレイスの追加
 ```shell
-/plugin marketplace add revfactory/harness
+/plugin marketplace add revfactory/jarbis
 ```
 
 #### プラグインのインストール
 ```shell
-/plugin install harness@harness
+/plugin install jarbis@jarbis
 ```
 
 ### グローバルスキルとして直接インストール
 
 ```shell
-# skillsディレクトリを ~/.claude/skills/harness/ にコピー
-cp -r skills/harness ~/.claude/skills/harness
+# skillsディレクトリを ~/.claude/skills/jarbis/ にコピー
+cp -r skills/jarbis ~/.claude/skills/jarbis
 ```
 
 ## プラグイン構成
 
 ```
-harness/
+jarbis/
 ├── .claude-plugin/
 │   └── plugin.json                 # プラグインマニフェスト
 ├── skills/
-│   └── harness/
+│   └── jarbis/
 │       ├── SKILL.md                # メインスキル定義（6フェーズワークフロー）
 │       └── references/
 │           ├── agent-design-patterns.md   # 6種のアーキテクチャパターン
@@ -91,9 +91,9 @@ harness/
 Claude Codeで以下のように呼び出します：
 
 ```
-Build a harness for this project
+Build a jarbis for this project
 Design an agent team for this domain
-Set up a harness
+Set up a jarbis
 ```
 
 ### 実行モード
@@ -104,7 +104,7 @@ Set up a harness
 | **サブエージェント** | Agentツール直接呼び出し | 単発タスク、エージェント間通信不要の場合 |
 
 <p align="center">
-  <img src="harness_team.png" alt="Harness Agent Team" width="500">
+  <img src="jarbis_team.png" alt="Jarbis Agent Team" width="500">
 </p>
 
 ### アーキテクチャパターン
@@ -120,7 +120,7 @@ Set up a harness
 
 ## 出力
 
-Harnessが生成するファイル：
+Jarbisが生成するファイル：
 
 ```
 your-project/
@@ -139,75 +139,75 @@ your-project/
 
 ## ユースケース — そのまま使えるプロンプト
 
-Harnessインストール後、以下のプロンプトをClaude Codeにコピーしてお使いください：
+Jarbisインストール後、以下のプロンプトをClaude Codeにコピーしてお使いください：
 
 **ディープリサーチ**
 ```
-Build a harness for deep research. I need an agent team that can investigate
+Build a jarbis for deep research. I need an agent team that can investigate
 any topic from multiple angles — web search, academic sources, community
 sentiment — then cross-validate findings and produce a comprehensive report.
 ```
 
 **ウェブサイト制作**
 ```
-Build a harness for full-stack website development. The team should handle
+Build a jarbis for full-stack website development. The team should handle
 design, frontend (React/Next.js), backend (API), and QA testing in a
 coordinated pipeline from wireframe to deployment.
 ```
 
 **ウェブトゥーン制作**
 ```
-Build a harness for webtoon episode production. I need agents for story
+Build a jarbis for webtoon episode production. I need agents for story
 writing, character design prompts, panel layout planning, and dialogue
 editing. They should review each other's work for style consistency.
 ```
 
 **YouTube コンテンツ企画**
 ```
-Build a harness for YouTube content creation. The team should research
+Build a jarbis for YouTube content creation. The team should research
 trending topics, write scripts, optimize titles/tags for SEO, and plan
 thumbnail concepts — all coordinated by a supervisor agent.
 ```
 
 **コードレビュー**
 ```
-Build a harness for comprehensive code review. I want parallel agents
+Build a jarbis for comprehensive code review. I want parallel agents
 checking architecture, security vulnerabilities, performance bottlenecks,
 and code style — then merging all findings into a single report.
 ```
 
 **技術ドキュメント作成**
 ```
-Build a harness that generates API documentation from this codebase.
+Build a jarbis that generates API documentation from this codebase.
 Agents should analyze endpoints, write descriptions, generate usage
 examples, and review for completeness.
 ```
 
 **データパイプライン設計**
 ```
-Build a harness for designing data pipelines. I need agents for schema
+Build a jarbis for designing data pipelines. I need agents for schema
 design, ETL logic, data validation rules, and monitoring setup that
 delegate sub-tasks hierarchically.
 ```
 
 **マーケティングキャンペーン**
 ```
-Build a harness for marketing campaign creation. The team should research
+Build a jarbis for marketing campaign creation. The team should research
 the target market, write ad copy, design visual concepts, and set up
 A/B test plans with iterative quality review.
 ```
 
-## Harnessで構築されたプロジェクト
+## Jarbisで構築されたプロジェクト
 
-### Harness 100
+### Jarbis 100
 
-**[revfactory/harness-100](https://github.com/revfactory/harness-100)** — 10ドメイン、100のプロダクションレディなエージェントチームハーネス（英韓200パッケージ）。各ハーネスには4〜5名の専門エージェント、オーケストレータースキル、ドメイン特化スキルが含まれており、すべて本プラグインで生成されました。コンテンツ制作、ソフトウェア開発、データ/AI、ビジネス戦略、教育、法律、ヘルスケアなど1,808のMarkdownファイル。
+**[revfactory/jarbis-100](https://github.com/revfactory/jarbis-100)** — 10ドメイン、100のプロダクションレディなエージェントチームハーネス（英韓200パッケージ）。各ハーネスには4〜5名の専門エージェント、オーケストレータースキル、ドメイン特化スキルが含まれており、すべて本プラグインで生成されました。コンテンツ制作、ソフトウェア開発、データ/AI、ビジネス戦略、教育、法律、ヘルスケアなど1,808のMarkdownファイル。
 
-### 研究：Harness適用前後のA/Bテスト
+### 研究：Jarbis適用前後のA/Bテスト
 
-**[revfactory/claude-code-harness](https://github.com/revfactory/claude-code-harness)** — 15のソフトウェアエンジニアリング課題を対象とした統制実験で、構造化された事前設定がLLMコードエージェントの出力品質に与える影響を測定しました。
+**[revfactory/claude-code-jarbis](https://github.com/revfactory/claude-code-jarbis)** — 15のソフトウェアエンジニアリング課題を対象とした統制実験で、構造化された事前設定がLLMコードエージェントの出力品質に与える影響を測定しました。
 
-| 指標 | Harness未適用 | Harness適用 | 改善 |
+| 指標 | Jarbis未適用 | Jarbis適用 | 改善 |
 |------|:-:|:-:|:-:|
 | 平均品質スコア | 49.5 | 79.3 | **+60%** |
 | 勝率 | — | — | **100%** (15/15) |
@@ -215,7 +215,7 @@ A/B test plans with iterative quality review.
 
 主な発見：課題の難易度が高いほど改善効果が増大（Basic +23.8、Advanced +29.6、Expert +36.2）。
 
-> 論文全文：*Hwang, M. (2026). Harness: Structured Pre-Configuration for Enhancing LLM Code Agent Output Quality.*
+> 論文全文：*Hwang, M. (2026). Jarbis: Structured Pre-Configuration for Enhancing LLM Code Agent Output Quality.*
 
 ## 要件
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harness — Agent Team & Skill Architect for Claude Code</title>
+<title>Jarbis — Agent Team & Skill Architect for Claude Code</title>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -137,7 +137,7 @@ section{padding:7rem 0}
 .finding-dot{width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:.5rem;flex-shrink:0}
 .finding p{font-size:.95rem;color:var(--text);max-width:none}
 
-/* ── Harness 100 ── */
+/* ── Jarbis 100 ── */
 .domains-orbit{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:2.5rem}
 .domain-tag{padding:.6rem 1.4rem;border-radius:100px;font-size:.85rem;font-weight:500;background:var(--surface);border:1px solid var(--border);transition:all .3s;cursor:default}
 .domain-tag:hover{border-color:var(--accent);transform:scale(1.06);box-shadow:0 0 20px var(--accent-glow)}
@@ -194,10 +194,10 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
   <div class="hero-inner">
     <div class="badge" data-i18n="hero.badge">Claude Code Plugin</div>
     <h1 data-i18n="hero.title" data-i18n-html="true">Build <span>Agent Teams</span><br>That Actually Work</h1>
-    <p data-i18n="hero.desc">Harness is a meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use &mdash; all from a single prompt.</p>
+    <p data-i18n="hero.desc">Jarbis is a meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use &mdash; all from a single prompt.</p>
     <div class="hero-actions">
       <a href="#install" class="btn btn-primary" data-i18n="hero.btn_start">Get Started</a>
-      <a href="https://github.com/revfactory/harness" class="btn btn-outline" target="_blank">
+      <a href="https://github.com/revfactory/jarbis" class="btn btn-outline" target="_blank">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         <span data-i18n="hero.btn_github">GitHub</span>
       </a>
@@ -222,7 +222,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
       </div>
       <div class="stat">
         <div class="stat-num" data-target="1808" data-suffix="">0</div>
-        <div class="stat-label" data-i18n="stats.files_label">Generated Files in Harness&nbsp;100</div>
+        <div class="stat-label" data-i18n="stats.files_label">Generated Files in Jarbis&nbsp;100</div>
       </div>
       <div class="stat">
         <div class="stat-num" data-target="6" data-suffix="">0</div>
@@ -236,7 +236,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <section id="features">
   <div class="container">
     <h2 class="reveal" data-i18n="features.title" data-i18n-html="true">Everything You Need to<br>Orchestrate Agent Teams</h2>
-    <p class="reveal" data-i18n="features.desc">From domain analysis to validation, Harness automates the entire lifecycle of building multi-agent systems.</p>
+    <p class="reveal" data-i18n="features.desc">From domain analysis to validation, Jarbis automates the entire lifecycle of building multi-agent systems.</p>
     <div class="features-grid">
       <div class="feature-card reveal">
         <div class="feature-icon">&#9881;</div>
@@ -266,7 +266,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <section id="usecases">
   <div class="container">
     <h2 class="reveal" data-i18n="usecases.title">Try These Prompts</h2>
-    <p class="reveal" data-i18n="usecases.desc">Copy any prompt into Claude Code after installing Harness. Click to expand.</p>
+    <p class="reveal" data-i18n="usecases.desc">Copy any prompt into Claude Code after installing Jarbis. Click to expand.</p>
     <div class="usecases-grid reveal">
       <div class="usecase-card" data-active="false">
         <div class="uc-icon">&#128270;</div>
@@ -274,7 +274,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.research.short">Multi-agent investigation teams</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Fan-out/Fan-in</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.research.prompt">Build a harness for deep research. I need an agent team that can investigate any topic from multiple angles &mdash; web search, academic sources, community sentiment &mdash; then cross-validate findings and produce a comprehensive report.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.research.prompt">Build a jarbis for deep research. I need an agent team that can investigate any topic from multiple angles &mdash; web search, academic sources, community sentiment &mdash; then cross-validate findings and produce a comprehensive report.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -283,7 +283,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.website.short">Full-stack build pipeline</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Pipeline</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.website.prompt">Build a harness for full-stack website development. The team should handle design, frontend (React/Next.js), backend (API), and QA testing in a coordinated pipeline from wireframe to deployment.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.website.prompt">Build a jarbis for full-stack website development. The team should handle design, frontend (React/Next.js), backend (API), and QA testing in a coordinated pipeline from wireframe to deployment.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -292,7 +292,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.webtoon.short">Creative team for episodic content</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Producer-Reviewer</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.webtoon.prompt">Build a harness for webtoon episode production. I need agents for story writing, character design prompts, panel layout planning, and dialogue editing. They should review each other's work for style consistency.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.webtoon.prompt">Build a jarbis for webtoon episode production. I need agents for story writing, character design prompts, panel layout planning, and dialogue editing. They should review each other's work for style consistency.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -301,7 +301,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.youtube.short">End-to-end video planning</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Supervisor</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.youtube.prompt">Build a harness for YouTube content creation. The team should research trending topics, write scripts, optimize titles/tags for SEO, and plan thumbnail concepts &mdash; all coordinated by a supervisor agent.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.youtube.prompt">Build a jarbis for YouTube content creation. The team should research trending topics, write scripts, optimize titles/tags for SEO, and plan thumbnail concepts &mdash; all coordinated by a supervisor agent.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -310,7 +310,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.codereview.short">Parallel multi-dimension audit</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Fan-out/Fan-in</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.codereview.prompt">Build a harness for comprehensive code review. I want parallel agents checking architecture, security vulnerabilities, performance bottlenecks, and code style &mdash; then merging all findings into a single report.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.codereview.prompt">Build a jarbis for comprehensive code review. I want parallel agents checking architecture, security vulnerabilities, performance bottlenecks, and code style &mdash; then merging all findings into a single report.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -319,7 +319,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.techdocs.short">Docs from codebase analysis</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Pipeline</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.techdocs.prompt">Build a harness that generates API documentation from this codebase. Agents should analyze endpoints, write descriptions, generate usage examples, and review for completeness.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.techdocs.prompt">Build a jarbis that generates API documentation from this codebase. Agents should analyze endpoints, write descriptions, generate usage examples, and review for completeness.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -328,7 +328,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.datapipeline.short">End-to-end data workflows</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Hierarchical Delegation</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.datapipeline.prompt">Build a harness for designing data pipelines. I need agents for schema design, ETL logic, data validation rules, and monitoring setup that delegate sub-tasks hierarchically.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.datapipeline.prompt">Build a jarbis for designing data pipelines. I need agents for schema design, ETL logic, data validation rules, and monitoring setup that delegate sub-tasks hierarchically.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
       <div class="usecase-card" data-active="false">
@@ -337,7 +337,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <p class="uc-short" data-i18n="usecases.marketing.short">Campaign asset creation &amp; testing</p>
         <div class="uc-detail">
           <div class="uc-pattern"><span class="uc-badge">Producer-Reviewer</span></div>
-          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.marketing.prompt">Build a harness for marketing campaign creation. The team should research the target market, write ad copy, design visual concepts, and set up A/B test plans with iterative quality review.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
+          <div class="uc-prompt" onclick="event.stopPropagation();copyPrompt(this)" data-i18n-prompt="usecases.marketing.prompt">Build a jarbis for marketing campaign creation. The team should research the target market, write ad copy, design visual concepts, and set up A/B test plans with iterative quality review.<span class="uc-copy-hint" data-i18n="common.click_to_copy">Click to copy</span></div>
         </div>
       </div>
     </div>
@@ -348,7 +348,7 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <section id="workflow">
   <div class="container">
     <h2 class="reveal" data-i18n="workflow.title">6-Phase Workflow</h2>
-    <p class="reveal" data-i18n="workflow.desc" data-i18n-html="true">Say &ldquo;build a harness&rdquo; and Harness runs a structured 6-phase pipeline to produce production-ready agent teams.</p>
+    <p class="reveal" data-i18n="workflow.desc" data-i18n-html="true">Say &ldquo;build a jarbis&rdquo; and Jarbis runs a structured 6-phase pipeline to produce production-ready agent teams.</p>
     <div class="workflow-track">
       <div class="phase" data-phase="1">
         <div class="phase-dot">01</div>
@@ -475,8 +475,8 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
           </div>
         </div>
         <div style="display:flex;gap:1.5rem;margin-top:1rem;font-size:.8rem;color:var(--text-dim)">
-          <span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#555;margin-right:.4rem;vertical-align:middle"></span><span data-i18n="research.bar_without">Without Harness</span></span>
-          <span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--accent);margin-right:.4rem;vertical-align:middle"></span><span data-i18n="research.bar_with">With Harness</span></span>
+          <span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#555;margin-right:.4rem;vertical-align:middle"></span><span data-i18n="research.bar_without">Without Jarbis</span></span>
+          <span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--accent);margin-right:.4rem;vertical-align:middle"></span><span data-i18n="research.bar_with">With Jarbis</span></span>
         </div>
       </div>
       <div class="research-text reveal">
@@ -485,30 +485,30 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <div class="finding"><div class="finding-dot"></div><p data-i18n="research.finding1" data-i18n-html="true"><strong>100% win rate</strong> across all 15 test cases</p></div>
         <div class="finding"><div class="finding-dot"></div><p data-i18n="research.finding2" data-i18n-html="true"><strong>32% less variance</strong> &mdash; more consistent, predictable output</p></div>
         <div class="finding"><div class="finding-dot"></div><p data-i18n="research.finding3" data-i18n-html="true"><strong>Scales with complexity</strong> &mdash; the harder the task, the bigger the gain</p></div>
-        <a href="https://github.com/revfactory/claude-code-harness" target="_blank" class="btn btn-outline" style="margin-top:1.5rem" data-i18n="research.btn" data-i18n-html="true">Read the Paper &rarr;</a>
+        <a href="https://github.com/revfactory/claude-code-jarbis" target="_blank" class="btn btn-outline" style="margin-top:1.5rem" data-i18n="research.btn" data-i18n-html="true">Read the Paper &rarr;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Harness 100 ── -->
-<section id="harness100">
+<!-- ── Jarbis 100 ── -->
+<section id="jarbis100">
   <div class="container" style="text-align:center">
-    <h2 class="reveal" data-i18n="harness100.title">100 Ready-Made Harnesses</h2>
-    <p class="reveal" style="margin:0 auto" data-i18n="harness100.desc">Production-ready agent teams across 10 domains. 200 packages (EN + KO). 1,808 files. All generated by this plugin.</p>
+    <h2 class="reveal" data-i18n="jarbis100.title">100 Ready-Made Jarbises</h2>
+    <p class="reveal" style="margin:0 auto" data-i18n="jarbis100.desc">Production-ready agent teams across 10 domains. 200 packages (EN + KO). 1,808 files. All generated by this plugin.</p>
     <div class="domains-orbit reveal">
-      <div class="domain-tag" data-i18n="harness100.domain_content">Content Creation</div>
-      <div class="domain-tag" data-i18n="harness100.domain_software">Software Dev</div>
-      <div class="domain-tag" data-i18n="harness100.domain_data">Data &amp; AI/ML</div>
-      <div class="domain-tag" data-i18n="harness100.domain_business">Business Strategy</div>
-      <div class="domain-tag" data-i18n="harness100.domain_education">Education</div>
-      <div class="domain-tag" data-i18n="harness100.domain_legal">Legal &amp; Compliance</div>
-      <div class="domain-tag" data-i18n="harness100.domain_health">Health &amp; Lifestyle</div>
-      <div class="domain-tag" data-i18n="harness100.domain_communication">Communication</div>
-      <div class="domain-tag" data-i18n="harness100.domain_operations">Operations</div>
-      <div class="domain-tag" data-i18n="harness100.domain_specialized">Specialized Domains</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_content">Content Creation</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_software">Software Dev</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_data">Data &amp; AI/ML</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_business">Business Strategy</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_education">Education</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_legal">Legal &amp; Compliance</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_health">Health &amp; Lifestyle</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_communication">Communication</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_operations">Operations</div>
+      <div class="domain-tag" data-i18n="jarbis100.domain_specialized">Specialized Domains</div>
     </div>
-    <a href="https://github.com/revfactory/harness-100" target="_blank" class="btn btn-outline" style="margin-top:2.5rem" data-i18n="harness100.btn" data-i18n-html="true">Explore Harness 100 &rarr;</a>
+    <a href="https://github.com/revfactory/jarbis-100" target="_blank" class="btn btn-outline" style="margin-top:2.5rem" data-i18n="jarbis100.btn" data-i18n-html="true">Explore Jarbis 100 &rarr;</a>
   </div>
 </section>
 
@@ -522,17 +522,17 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
         <span class="step-num">1</span><span style="font-size:.9rem;color:var(--text-dim)" data-i18n="install.step1">Add the marketplace</span>
       </div>
       <div class="code-block" onclick="copyCode(this)">
-        <span class="prompt">&gt; </span><span class="cmd">/plugin marketplace add revfactory/harness</span>
+        <span class="prompt">&gt; </span><span class="cmd">/plugin marketplace add revfactory/jarbis</span>
         <button class="copy-btn" data-i18n="install.copy_btn">Copy</button>
       </div>
       <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin:1.5rem 0 .5rem">
         <span class="step-num">2</span><span style="font-size:.9rem;color:var(--text-dim)" data-i18n="install.step2">Install the plugin</span>
       </div>
       <div class="code-block" onclick="copyCode(this)">
-        <span class="prompt">&gt; </span><span class="cmd">/plugin install harness@harness</span>
+        <span class="prompt">&gt; </span><span class="cmd">/plugin install jarbis@jarbis</span>
         <button class="copy-btn" data-i18n="install.copy_btn">Copy</button>
       </div>
-      <p style="margin:2rem auto 0;font-size:.9rem" data-i18n="install.hint" data-i18n-html="true">Then just say: <strong style="color:var(--accent2)">&ldquo;Build a harness for this project&rdquo;</strong></p>
+      <p style="margin:2rem auto 0;font-size:.9rem" data-i18n="install.hint" data-i18n-html="true">Then just say: <strong style="color:var(--accent2)">&ldquo;Build a jarbis for this project&rdquo;</strong></p>
     </div>
   </div>
 </section>
@@ -541,9 +541,9 @@ footer .links{display:flex;gap:2rem;justify-content:center;margin-bottom:1rem}
 <footer>
   <div class="container">
     <div class="links">
-      <a href="https://github.com/revfactory/harness" target="_blank" data-i18n="footer.github">GitHub</a>
-      <a href="https://github.com/revfactory/harness-100" target="_blank" data-i18n="footer.harness100">Harness 100</a>
-      <a href="https://github.com/revfactory/claude-code-harness" target="_blank" data-i18n="footer.research">Research Paper</a>
+      <a href="https://github.com/revfactory/jarbis" target="_blank" data-i18n="footer.github">GitHub</a>
+      <a href="https://github.com/revfactory/jarbis-100" target="_blank" data-i18n="footer.jarbis100">Jarbis 100</a>
+      <a href="https://github.com/revfactory/claude-code-jarbis" target="_blank" data-i18n="footer.research">Research Paper</a>
       <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
     </div>
     <p data-i18n="footer.copyright" data-i18n-html="true">Apache 2.0 &mdash; Built by <a href="https://github.com/revfactory" target="_blank">revfactory</a></p>
@@ -564,9 +564,9 @@ const i18n = {
     "ja": "\u672c\u5f53\u306b\u6a5f\u80fd\u3059\u308b<span>\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0</span>\u3092<br>\u69cb\u7bc9\u3057\u3088\u3046"
   },
   "hero.desc": {
-    "en": "Harness is a meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use \u2014 all from a single prompt.",
-    "ko": "Harness\ub294 \ub3c4\uba54\uc778\uc5d0 \ub9de\ub294 \uc5d0\uc774\uc804\ud2b8 \ud300\uc744 \uc124\uacc4\ud558\uace0, \uc804\ubb38 \uc5d0\uc774\uc804\ud2b8\ub97c \uc815\uc758\ud558\uba70, \uc5d0\uc774\uc804\ud2b8\uac00 \uc0ac\uc6a9\ud560 \uc2a4\ud0ac\uc744 \uc0dd\uc131\ud558\ub294 \uba54\ud0c0 \uc2a4\ud0ac\uc785\ub2c8\ub2e4 \u2014 \ub2e8 \ud558\ub098\uc758 \ud504\ub86c\ud504\ud2b8\ub85c.",
-    "ja": "Harness\u306f\u30c9\u30e1\u30a4\u30f3\u7279\u5316\u306e\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3092\u8a2d\u8a08\u3057\u3001\u5c02\u9580\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3092\u5b9a\u7fa9\u3057\u3001\u5f7c\u3089\u304c\u4f7f\u3046\u30b9\u30ad\u30eb\u3092\u751f\u6210\u3059\u308b\u30e1\u30bf\u30b9\u30ad\u30eb\u3067\u3059 \u2014 \u305f\u3063\u305f\u4e00\u3064\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3067\u3002"
+    "en": "Jarbis is a meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use \u2014 all from a single prompt.",
+    "ko": "Jarbis\ub294 \ub3c4\uba54\uc778\uc5d0 \ub9de\ub294 \uc5d0\uc774\uc804\ud2b8 \ud300\uc744 \uc124\uacc4\ud558\uace0, \uc804\ubb38 \uc5d0\uc774\uc804\ud2b8\ub97c \uc815\uc758\ud558\uba70, \uc5d0\uc774\uc804\ud2b8\uac00 \uc0ac\uc6a9\ud560 \uc2a4\ud0ac\uc744 \uc0dd\uc131\ud558\ub294 \uba54\ud0c0 \uc2a4\ud0ac\uc785\ub2c8\ub2e4 \u2014 \ub2e8 \ud558\ub098\uc758 \ud504\ub86c\ud504\ud2b8\ub85c.",
+    "ja": "Jarbis\u306f\u30c9\u30e1\u30a4\u30f3\u7279\u5316\u306e\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3092\u8a2d\u8a08\u3057\u3001\u5c02\u9580\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3092\u5b9a\u7fa9\u3057\u3001\u5f7c\u3089\u304c\u4f7f\u3046\u30b9\u30ad\u30eb\u3092\u751f\u6210\u3059\u308b\u30e1\u30bf\u30b9\u30ad\u30eb\u3067\u3059 \u2014 \u305f\u3063\u305f\u4e00\u3064\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3067\u3002"
   },
   "hero.btn_start": {
     "en": "Get Started",
@@ -589,9 +589,9 @@ const i18n = {
     "ja": "\u52dd\u7387\uff0815/15\u30bf\u30b9\u30af\uff09"
   },
   "stats.files_label": {
-    "en": "Generated Files in Harness&nbsp;100",
-    "ko": "Harness 100\uc5d0\uc11c \uc0dd\uc131\ub41c \ud30c\uc77c",
-    "ja": "Harness 100\u3067\u751f\u6210\u3055\u308c\u305f\u30d5\u30a1\u30a4\u30eb"
+    "en": "Generated Files in Jarbis&nbsp;100",
+    "ko": "Jarbis 100\uc5d0\uc11c \uc0dd\uc131\ub41c \ud30c\uc77c",
+    "ja": "Jarbis 100\u3067\u751f\u6210\u3055\u308c\u305f\u30d5\u30a1\u30a4\u30eb"
   },
   "stats.patterns_label": {
     "en": "Architecture Patterns",
@@ -604,9 +604,9 @@ const i18n = {
     "ja": "\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u306e\u30aa\u30fc\u30b1\u30b9\u30c8\u30ec\u30fc\u30b7\u30e7\u30f3\u306b<br>\u5fc5\u8981\u306a\u3059\u3079\u3066"
   },
   "features.desc": {
-    "en": "From domain analysis to validation, Harness automates the entire lifecycle of building multi-agent systems.",
-    "ko": "\ub3c4\uba54\uc778 \ubd84\uc11d\ubd80\ud130 \uac80\uc99d\uae4c\uc9c0, Harness\uac00 \uba40\ud2f0 \uc5d0\uc774\uc804\ud2b8 \uc2dc\uc2a4\ud15c \uad6c\ucd95\uc758 \uc804 \uacfc\uc815\uc744 \uc790\ub3d9\ud654\ud569\ub2c8\ub2e4.",
-    "ja": "\u30c9\u30e1\u30a4\u30f3\u5206\u6790\u304b\u3089\u30d0\u30ea\u30c7\u30fc\u30b7\u30e7\u30f3\u307e\u3067\u3001Harness\u304c\u30de\u30eb\u30c1\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30b7\u30b9\u30c6\u30e0\u69cb\u7bc9\u306e\u5168\u30e9\u30a4\u30d5\u30b5\u30a4\u30af\u30eb\u3092\u81ea\u52d5\u5316\u3057\u307e\u3059\u3002"
+    "en": "From domain analysis to validation, Jarbis automates the entire lifecycle of building multi-agent systems.",
+    "ko": "\ub3c4\uba54\uc778 \ubd84\uc11d\ubd80\ud130 \uac80\uc99d\uae4c\uc9c0, Jarbis\uac00 \uba40\ud2f0 \uc5d0\uc774\uc804\ud2b8 \uc2dc\uc2a4\ud15c \uad6c\ucd95\uc758 \uc804 \uacfc\uc815\uc744 \uc790\ub3d9\ud654\ud569\ub2c8\ub2e4.",
+    "ja": "\u30c9\u30e1\u30a4\u30f3\u5206\u6790\u304b\u3089\u30d0\u30ea\u30c7\u30fc\u30b7\u30e7\u30f3\u307e\u3067\u3001Jarbis\u304c\u30de\u30eb\u30c1\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30b7\u30b9\u30c6\u30e0\u69cb\u7bc9\u306e\u5168\u30e9\u30a4\u30d5\u30b5\u30a4\u30af\u30eb\u3092\u81ea\u52d5\u5316\u3057\u307e\u3059\u3002"
   },
   "features.agent_title": {
     "en": "Agent Team Design",
@@ -654,9 +654,9 @@ const i18n = {
     "ja": "\u3053\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092\u8a66\u3057\u3066\u307f\u3088\u3046"
   },
   "usecases.desc": {
-    "en": "Copy any prompt into Claude Code after installing Harness. Click to expand.",
-    "ko": "Harness \uc124\uce58 \ud6c4 \uc544\ubb34 \ud504\ub86c\ud504\ud2b8\ub098 Claude Code\uc5d0 \ubcf5\uc0ac\ud574\uc11c \uc0ac\uc6a9\ud558\uc138\uc694. \ud074\ub9ad\ud558\uc5ec \ud3bc\uce58\uae30.",
-    "ja": "Harness\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5f8c\u3001\u4efb\u610f\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092Claude Code\u306b\u30b3\u30d4\u30fc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30af\u30ea\u30c3\u30af\u3067\u5c55\u958b\u3002"
+    "en": "Copy any prompt into Claude Code after installing Jarbis. Click to expand.",
+    "ko": "Jarbis \uc124\uce58 \ud6c4 \uc544\ubb34 \ud504\ub86c\ud504\ud2b8\ub098 Claude Code\uc5d0 \ubcf5\uc0ac\ud574\uc11c \uc0ac\uc6a9\ud558\uc138\uc694. \ud074\ub9ad\ud558\uc5ec \ud3bc\uce58\uae30.",
+    "ja": "Jarbis\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5f8c\u3001\u4efb\u610f\u306e\u30d7\u30ed\u30f3\u30d7\u30c8\u3092Claude Code\u306b\u30b3\u30d4\u30fc\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30af\u30ea\u30c3\u30af\u3067\u5c55\u958b\u3002"
   },
   "usecases.research.title": {
     "en": "Deep Research",
@@ -669,7 +669,7 @@ const i18n = {
     "ja": "\u30de\u30eb\u30c1\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u8abf\u67fb\u30c1\u30fc\u30e0"
   },
   "usecases.research.prompt": {
-    "en": "Build a harness for deep research. I need an agent team that can investigate any topic from multiple angles \u2014 web search, academic sources, community sentiment \u2014 then cross-validate findings and produce a comprehensive report.",
+    "en": "Build a jarbis for deep research. I need an agent team that can investigate any topic from multiple angles \u2014 web search, academic sources, community sentiment \u2014 then cross-validate findings and produce a comprehensive report.",
     "ko": "\ub9ac\uc11c\uce58 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \uc5b4\ub5a4 \uc8fc\uc81c\ub4e0 \uc5ec\ub7ec \uac01\ub3c4\uc5d0\uc11c \uc870\uc0ac\ud560 \uc218 \uc788\ub294 \uc5d0\uc774\uc804\ud2b8 \ud300\uc774 \ud544\uc694\ud574 \u2014 \uc6f9 \uac80\uc0c9, \ud559\uc220 \uc790\ub8cc, \ucee4\ubba4\ub2c8\ud2f0 \ubc18\uc751 \u2014 \uad50\ucc28 \uac80\uc99d \ud6c4 \uc885\ud569 \ubcf4\uace0\uc11c\ub97c \uc791\uc131\ud558\ub294 \ud300.",
     "ja": "\u30c7\u30a3\u30fc\u30d7\u30ea\u30b5\u30fc\u30c1\u7528\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u3042\u3089\u3086\u308b\u30c6\u30fc\u30de\u3092\u8907\u6570\u306e\u89d2\u5ea6\u304b\u3089\u8abf\u67fb\u3067\u304d\u308b\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u304c\u5fc5\u8981 \u2014 \u30a6\u30a7\u30d6\u691c\u7d22\u3001\u5b66\u8853\u8cc7\u6599\u3001\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u306e\u53cd\u5fdc \u2014 \u4ea4\u5dee\u691c\u8a3c\u3057\u3066\u7dcf\u5408\u30ec\u30dd\u30fc\u30c8\u3092\u4f5c\u6210\u3059\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -684,7 +684,7 @@ const i18n = {
     "ja": "\u30d5\u30eb\u30b9\u30bf\u30c3\u30af\u30d3\u30eb\u30c9\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3"
   },
   "usecases.website.prompt": {
-    "en": "Build a harness for full-stack website development. The team should handle design, frontend (React/Next.js), backend (API), and QA testing in a coordinated pipeline from wireframe to deployment.",
+    "en": "Build a jarbis for full-stack website development. The team should handle design, frontend (React/Next.js), backend (API), and QA testing in a coordinated pipeline from wireframe to deployment.",
     "ko": "\ud480\uc2a4\ud0dd \uc6f9\uc0ac\uc774\ud2b8 \uac1c\ubc1c \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \ub514\uc790\uc778, \ud504\ub860\ud2b8\uc5d4\ub4dc(React/Next.js), \ubc31\uc5d4\ub4dc(API), QA \ud14c\uc2a4\ud2b8\ub97c \uc640\uc774\uc5b4\ud504\ub808\uc784\ubd80\ud130 \ubc30\ud3ec\uae4c\uc9c0 \ud30c\uc774\ud504\ub77c\uc778\uc73c\ub85c \uc870\uc728\ud558\ub294 \ud300.",
     "ja": "\u30d5\u30eb\u30b9\u30bf\u30c3\u30afWeb\u30b5\u30a4\u30c8\u958b\u767a\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30c7\u30b6\u30a4\u30f3\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\uff08React/Next.js\uff09\u3001\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\uff08API\uff09\u3001QA\u30c6\u30b9\u30c8\u3092\u30ef\u30a4\u30e4\u30fc\u30d5\u30ec\u30fc\u30e0\u304b\u3089\u30c7\u30d7\u30ed\u30a4\u307e\u3067\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u3067\u8abf\u6574\u3059\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -699,7 +699,7 @@ const i18n = {
     "ja": "\u30a8\u30d4\u30bd\u30fc\u30c9\u30b3\u30f3\u30c6\u30f3\u30c4\u306e\u30af\u30ea\u30a8\u30a4\u30c6\u30a3\u30d6\u30c1\u30fc\u30e0"
   },
   "usecases.webtoon.prompt": {
-    "en": "Build a harness for webtoon episode production. I need agents for story writing, character design prompts, panel layout planning, and dialogue editing. They should review each other\u2019s work for style consistency.",
+    "en": "Build a jarbis for webtoon episode production. I need agents for story writing, character design prompts, panel layout planning, and dialogue editing. They should review each other\u2019s work for style consistency.",
     "ko": "\uc6f9\ud230 \uc5d0\ud53c\uc18c\ub4dc \uc81c\uc791 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \uc2a4\ud1a0\ub9ac \uc791\uc131, \uce90\ub9ad\ud130 \ub514\uc790\uc778 \ud504\ub86c\ud504\ud2b8, \ud328\ub110 \ub808\uc774\uc544\uc6c3 \uae30\ud68d, \ub300\uc0ac \ud3b8\uc9d1 \uc5d0\uc774\uc804\ud2b8\uac00 \ud544\uc694\ud558\uace0 \uc11c\ub85c\uc758 \uc791\uc5c5\ubb3c\uc744 \uc2a4\ud0c0\uc77c \uc77c\uad00\uc131 \uad00\uc810\uc5d0\uc11c \ub9ac\ubdf0\ud574\uc57c \ud574.",
     "ja": "\u30a6\u30a7\u30d6\u30c8\u30a5\u30fc\u30f3\u306e\u30a8\u30d4\u30bd\u30fc\u30c9\u5236\u4f5c\u7528\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30b9\u30c8\u30fc\u30ea\u30fc\u57f7\u7b46\u3001\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u30c7\u30b6\u30a4\u30f3\u30d7\u30ed\u30f3\u30d7\u30c8\u3001\u30d1\u30cd\u30eb\u30ec\u30a4\u30a2\u30a6\u30c8\u4f01\u753b\u3001\u30bb\u30ea\u30d5\u7de8\u96c6\u306e\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u304c\u5fc5\u8981\u3067\u3001\u4e92\u3044\u306e\u6210\u679c\u7269\u3092\u30b9\u30bf\u30a4\u30eb\u306e\u4e00\u8cab\u6027\u3067\u30ec\u30d3\u30e5\u30fc\u3059\u308b\u3053\u3068\u3002"
   },
@@ -714,7 +714,7 @@ const i18n = {
     "ja": "\u30a8\u30f3\u30c9\u30c4\u30fc\u30a8\u30f3\u30c9\u306e\u52d5\u753b\u4f01\u753b"
   },
   "usecases.youtube.prompt": {
-    "en": "Build a harness for YouTube content creation. The team should research trending topics, write scripts, optimize titles/tags for SEO, and plan thumbnail concepts \u2014 all coordinated by a supervisor agent.",
+    "en": "Build a jarbis for YouTube content creation. The team should research trending topics, write scripts, optimize titles/tags for SEO, and plan thumbnail concepts \u2014 all coordinated by a supervisor agent.",
     "ko": "\uc720\ud29c\ube0c \ucf58\ud150\uce20 \uc81c\uc791 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \ud2b8\ub80c\ub4dc \uc870\uc0ac, \ub300\ubcf8 \uc791\uc131, \uc81c\ubaa9/\ud0dc\uadf8 SEO \ucd5c\uc801\ud654, \uc378\ub124\uc77c \ucee8\uc149 \uae30\ud68d\uc744 \uac10\ub3c5\uc790 \uc5d0\uc774\uc804\ud2b8\uac00 \uc870\uc728\ud558\ub294 \ud300.",
     "ja": "YouTube\u30b3\u30f3\u30c6\u30f3\u30c4\u5236\u4f5c\u7528\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30c8\u30ec\u30f3\u30c9\u8abf\u67fb\u3001\u53f0\u672c\u57f7\u7b46\u3001\u30bf\u30a4\u30c8\u30eb/\u30bf\u30b0\u306eSEO\u6700\u9069\u5316\u3001\u30b5\u30e0\u30cd\u30a4\u30eb\u30b3\u30f3\u30bb\u30d7\u30c8\u4f01\u753b\u3092\u30b9\u30fc\u30d1\u30fc\u30d0\u30a4\u30b6\u30fc\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u304c\u8abf\u6574\u3059\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -729,7 +729,7 @@ const i18n = {
     "ja": "\u4e26\u5217\u30de\u30eb\u30c1\u30c7\u30a3\u30e1\u30f3\u30b7\u30e7\u30f3\u76e3\u67fb"
   },
   "usecases.codereview.prompt": {
-    "en": "Build a harness for comprehensive code review. I want parallel agents checking architecture, security vulnerabilities, performance bottlenecks, and code style \u2014 then merging all findings into a single report.",
+    "en": "Build a jarbis for comprehensive code review. I want parallel agents checking architecture, security vulnerabilities, performance bottlenecks, and code style \u2014 then merging all findings into a single report.",
     "ko": "\uc885\ud569 \ucf54\ub4dc \ub9ac\ubdf0 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \uc544\ud0a4\ud14d\ucc98, \ubcf4\uc548 \ucde8\uc57d\uc810, \uc131\ub2a5 \ubcd1\ubaa9, \ucf54\ub4dc \uc2a4\ud0c0\uc77c\uc744 \ubcd1\ub82c\ub85c \uac10\uc0ac\ud558\ub294 \uc5d0\uc774\uc804\ud2b8\ub4e4\uc774 \uacb0\uacfc\ub97c \ud558\ub098\uc758 \ub9ac\ud3ec\ud2b8\ub85c \ud1b5\ud569\ud558\ub294 \ud300.",
     "ja": "\u5305\u62ec\u7684\u306a\u30b3\u30fc\u30c9\u30ec\u30d3\u30e5\u30fc\u7528\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30a2\u30fc\u30ad\u30c6\u30af\u30c1\u30e3\u3001\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u8106\u5f31\u6027\u3001\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u30dc\u30c8\u30eb\u30cd\u30c3\u30af\u3001\u30b3\u30fc\u30c9\u30b9\u30bf\u30a4\u30eb\u3092\u4e26\u5217\u306b\u76e3\u67fb\u3059\u308b\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u304c\u7d50\u679c\u3092\u4e00\u3064\u306e\u30ec\u30dd\u30fc\u30c8\u306b\u7d71\u5408\u3059\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -744,7 +744,7 @@ const i18n = {
     "ja": "\u30b3\u30fc\u30c9\u30d9\u30fc\u30b9\u5206\u6790\u304b\u3089\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u751f\u6210"
   },
   "usecases.techdocs.prompt": {
-    "en": "Build a harness that generates API documentation from this codebase. Agents should analyze endpoints, write descriptions, generate usage examples, and review for completeness.",
+    "en": "Build a jarbis that generates API documentation from this codebase. Agents should analyze endpoints, write descriptions, generate usage examples, and review for completeness.",
     "ko": "\uc774 \ucf54\ub4dc\ubca0\uc774\uc2a4\uc5d0\uc11c API \ubb38\uc11c\ub97c \uc790\ub3d9 \uc0dd\uc131\ud558\ub294 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \uc5d4\ub4dc\ud3ec\uc778\ud2b8 \ubd84\uc11d, \uc124\uba85 \uc791\uc131, \uc0ac\uc6a9 \uc608\uc81c \uc0dd\uc131, \uc644\uc131\ub3c4 \ub9ac\ubdf0\ub97c \ud30c\uc774\ud504\ub77c\uc778\uc73c\ub85c \ucc98\ub9ac\ud558\ub294 \ud300.",
     "ja": "\u3053\u306e\u30b3\u30fc\u30c9\u30d9\u30fc\u30b9\u304b\u3089API\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3092\u81ea\u52d5\u751f\u6210\u3059\u308b\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u5206\u6790\u3001\u8aac\u660e\u306e\u4f5c\u6210\u3001\u4f7f\u7528\u4f8b\u306e\u751f\u6210\u3001\u5b8c\u5168\u6027\u306e\u30ec\u30d3\u30e5\u30fc\u3092\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u3067\u51e6\u7406\u3059\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -759,7 +759,7 @@ const i18n = {
     "ja": "\u30a8\u30f3\u30c9\u30c4\u30fc\u30a8\u30f3\u30c9\u306e\u30c7\u30fc\u30bf\u30ef\u30fc\u30af\u30d5\u30ed\u30fc"
   },
   "usecases.datapipeline.prompt": {
-    "en": "Build a harness for designing data pipelines. I need agents for schema design, ETL logic, data validation rules, and monitoring setup that delegate sub-tasks hierarchically.",
+    "en": "Build a jarbis for designing data pipelines. I need agents for schema design, ETL logic, data validation rules, and monitoring setup that delegate sub-tasks hierarchically.",
     "ko": "\ub370\uc774\ud130 \ud30c\uc774\ud504\ub77c\uc778 \uc124\uacc4 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \uc2a4\ud0a4\ub9c8 \uc124\uacc4, ETL \ub85c\uc9c1, \ub370\uc774\ud130 \uac80\uc99d \uaddc\uce59, \ubaa8\ub2c8\ud130\ub9c1 \uc124\uc815\uc744 \uacc4\uce35\uc801\uc73c\ub85c \uc704\uc784\ud558\ub294 \uc5d0\uc774\uc804\ud2b8 \ud300.",
     "ja": "\u30c7\u30fc\u30bf\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u8a2d\u8a08\u7528\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30b9\u30ad\u30fc\u30de\u8a2d\u8a08\u3001ETL\u30ed\u30b8\u30c3\u30af\u3001\u30c7\u30fc\u30bf\u691c\u8a3c\u30eb\u30fc\u30eb\u3001\u30e2\u30cb\u30bf\u30ea\u30f3\u30b0\u8a2d\u5b9a\u3092\u968e\u5c64\u7684\u306b\u59d4\u4efb\u3059\u308b\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3002"
   },
@@ -774,7 +774,7 @@ const i18n = {
     "ja": "\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u30a2\u30bb\u30c3\u30c8\u5236\u4f5c\u3068\u30c6\u30b9\u30c8"
   },
   "usecases.marketing.prompt": {
-    "en": "Build a harness for marketing campaign creation. The team should research the target market, write ad copy, design visual concepts, and set up A/B test plans with iterative quality review.",
+    "en": "Build a jarbis for marketing campaign creation. The team should research the target market, write ad copy, design visual concepts, and set up A/B test plans with iterative quality review.",
     "ko": "\ub9c8\ucf00\ud305 \uce60\ud398\uc778 \uc81c\uc791 \ud558\ub124\uc2a4\ub97c \uad6c\uc131\ud574\uc918. \ud0c0\uac9f \uc2dc\uc7a5 \uc870\uc0ac, \uad11\uace0 \uce74\ud53c \uc791\uc131, \ube44\uc8fc\uc5bc \ucee8\uc149 \ub514\uc790\uc778, A/B \ud14c\uc2a4\ud2b8 \uacc4\ud68d\uc744 \ubc18\ubcf5\uc801 \ud488\uc9c8 \ub9ac\ubdf0\uc640 \ud568\uaed8 \uc9c4\ud589\ud558\ub294 \ud300.",
     "ja": "\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u5236\u4f5c\u7528\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u3002\u30bf\u30fc\u30b2\u30c3\u30c8\u5e02\u5834\u8abf\u67fb\u3001\u5e83\u544a\u30b3\u30d4\u30fc\u4f5c\u6210\u3001\u30d3\u30b8\u30e5\u30a2\u30eb\u30b3\u30f3\u30bb\u30d7\u30c8\u30c7\u30b6\u30a4\u30f3\u3001A/B\u30c6\u30b9\u30c8\u8a08\u753b\u3092\u53cd\u5fa9\u7684\u306a\u54c1\u8cea\u30ec\u30d3\u30e5\u30fc\u3068\u5171\u306b\u9032\u3081\u308b\u30c1\u30fc\u30e0\u3002"
   },
@@ -784,9 +784,9 @@ const i18n = {
     "ja": "6\u30d5\u30a7\u30fc\u30ba\u30ef\u30fc\u30af\u30d5\u30ed\u30fc"
   },
   "workflow.desc": {
-    "en": "Say &ldquo;build a harness&rdquo; and Harness runs a structured 6-phase pipeline to produce production-ready agent teams.",
-    "ko": "&ldquo;\ud558\ub124\uc2a4 \uad6c\uc131\ud574\uc918&rdquo;\ub77c\uace0 \ub9d0\ud558\uba74, Harness\uac00 6\ub2e8\uacc4 \ud30c\uc774\ud504\ub77c\uc778\uc744 \uc2e4\ud589\ud558\uc5ec \ud504\ub85c\ub355\uc158 \ub808\ub514 \uc5d0\uc774\uc804\ud2b8 \ud300\uc744 \uc0dd\uc131\ud569\ub2c8\ub2e4.",
-    "ja": "\u300c\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u300d\u3068\u8a00\u3048\u3070\u3001Harness\u304c\u69cb\u9020\u5316\u3055\u308c\u305f6\u30d5\u30a7\u30fc\u30ba\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u3067\u30d7\u30ed\u30c0\u30af\u30b7\u30e7\u30f3\u30ec\u30c7\u30a3\u306a\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3092\u751f\u6210\u3057\u307e\u3059\u3002"
+    "en": "Say &ldquo;build a jarbis&rdquo; and Jarbis runs a structured 6-phase pipeline to produce production-ready agent teams.",
+    "ko": "&ldquo;\ud558\ub124\uc2a4 \uad6c\uc131\ud574\uc918&rdquo;\ub77c\uace0 \ub9d0\ud558\uba74, Jarbis\uac00 6\ub2e8\uacc4 \ud30c\uc774\ud504\ub77c\uc778\uc744 \uc2e4\ud589\ud558\uc5ec \ud504\ub85c\ub355\uc158 \ub808\ub514 \uc5d0\uc774\uc804\ud2b8 \ud300\uc744 \uc0dd\uc131\ud569\ub2c8\ub2e4.",
+    "ja": "\u300c\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u300d\u3068\u8a00\u3048\u3070\u3001Jarbis\u304c\u69cb\u9020\u5316\u3055\u308c\u305f6\u30d5\u30a7\u30fc\u30ba\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u3067\u30d7\u30ed\u30c0\u30af\u30b7\u30e7\u30f3\u30ec\u30c7\u30a3\u306a\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3092\u751f\u6210\u3057\u307e\u3059\u3002"
   },
   "workflow.phase1.title": {
     "en": "Domain Analysis",
@@ -984,79 +984,79 @@ const i18n = {
     "ja": "\u8ad6\u6587\u3092\u8aad\u3080 &rarr;"
   },
   "research.bar_without": {
-    "en": "Without Harness",
-    "ko": "Harness \ubbf8\uc801\uc6a9",
-    "ja": "Harness\u306a\u3057"
+    "en": "Without Jarbis",
+    "ko": "Jarbis \ubbf8\uc801\uc6a9",
+    "ja": "Jarbis\u306a\u3057"
   },
   "research.bar_with": {
-    "en": "With Harness",
-    "ko": "Harness \uc801\uc6a9",
-    "ja": "Harness\u3042\u308a"
+    "en": "With Jarbis",
+    "ko": "Jarbis \uc801\uc6a9",
+    "ja": "Jarbis\u3042\u308a"
   },
-  "harness100.title": {
-    "en": "100 Ready-Made Harnesses",
+  "jarbis100.title": {
+    "en": "100 Ready-Made Jarbises",
     "ko": "100\uac1c\uc758 \ud504\ub85c\ub355\uc158 \ub808\ub514 \ud558\ub124\uc2a4",
     "ja": "100\u306e\u3059\u3050\u4f7f\u3048\u308b\u30cf\u30fc\u30cd\u30b9"
   },
-  "harness100.desc": {
+  "jarbis100.desc": {
     "en": "Production-ready agent teams across 10 domains. 200 packages (EN + KO). 1,808 files. All generated by this plugin.",
     "ko": "10\uac1c \ub3c4\uba54\uc778\uc758 \ud504\ub85c\ub355\uc158 \ub808\ub514 \uc5d0\uc774\uc804\ud2b8 \ud300. 200\uac1c \ud328\ud0a4\uc9c0 (EN + KO). 1,808\uac1c \ud30c\uc77c. \ubaa8\ub450 \uc774 \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uc0dd\uc131.",
     "ja": "10\u30c9\u30e1\u30a4\u30f3\u306b\u308f\u305f\u308b\u30d7\u30ed\u30c0\u30af\u30b7\u30e7\u30f3\u30ec\u30c7\u30a3\u306a\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30c1\u30fc\u30e0\u3002200\u30d1\u30c3\u30b1\u30fc\u30b8\uff08EN + KO\uff09\u30021,808\u30d5\u30a1\u30a4\u30eb\u3002\u3059\u3079\u3066\u3053\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3067\u751f\u6210\u3002"
   },
-  "harness100.domain_content": {
+  "jarbis100.domain_content": {
     "en": "Content Creation",
     "ko": "\ucf58\ud150\uce20 \uc81c\uc791",
     "ja": "\u30b3\u30f3\u30c6\u30f3\u30c4\u5236\u4f5c"
   },
-  "harness100.domain_software": {
+  "jarbis100.domain_software": {
     "en": "Software Dev",
     "ko": "\uc18c\ud504\ud2b8\uc6e8\uc5b4 \uac1c\ubc1c",
     "ja": "\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u958b\u767a"
   },
-  "harness100.domain_data": {
+  "jarbis100.domain_data": {
     "en": "Data & AI/ML",
     "ko": "\ub370\uc774\ud130 & AI/ML",
     "ja": "\u30c7\u30fc\u30bf & AI/ML"
   },
-  "harness100.domain_business": {
+  "jarbis100.domain_business": {
     "en": "Business Strategy",
     "ko": "\ube44\uc988\ub2c8\uc2a4 \uc804\ub7b5",
     "ja": "\u30d3\u30b8\u30cd\u30b9\u6226\u7565"
   },
-  "harness100.domain_education": {
+  "jarbis100.domain_education": {
     "en": "Education",
     "ko": "\uad50\uc721",
     "ja": "\u6559\u80b2"
   },
-  "harness100.domain_legal": {
+  "jarbis100.domain_legal": {
     "en": "Legal & Compliance",
     "ko": "\ubc95\ub960 & \ucef4\ud50c\ub77c\uc774\uc5b8\uc2a4",
     "ja": "\u6cd5\u52d9 & \u30b3\u30f3\u30d7\u30e9\u30a4\u30a2\u30f3\u30b9"
   },
-  "harness100.domain_health": {
+  "jarbis100.domain_health": {
     "en": "Health & Lifestyle",
     "ko": "\ud5ec\uc2a4 & \ub77c\uc774\ud504\uc2a4\ud0c0\uc77c",
     "ja": "\u30d8\u30eb\u30b9 & \u30e9\u30a4\u30d5\u30b9\u30bf\u30a4\u30eb"
   },
-  "harness100.domain_communication": {
+  "jarbis100.domain_communication": {
     "en": "Communication",
     "ko": "\ucee4\ubba4\ub2c8\ucf00\uc774\uc158",
     "ja": "\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3"
   },
-  "harness100.domain_operations": {
+  "jarbis100.domain_operations": {
     "en": "Operations",
     "ko": "\uc6b4\uc601",
     "ja": "\u30aa\u30da\u30ec\u30fc\u30b7\u30e7\u30f3"
   },
-  "harness100.domain_specialized": {
+  "jarbis100.domain_specialized": {
     "en": "Specialized Domains",
     "ko": "\uc804\ubb38 \ub3c4\uba54\uc778",
     "ja": "\u7279\u5316\u30c9\u30e1\u30a4\u30f3"
   },
-  "harness100.btn": {
-    "en": "Explore Harness 100 &rarr;",
-    "ko": "Harness 100 \ub458\ub7ec\ubcf4\uae30 &rarr;",
-    "ja": "Harness 100\u3092\u898b\u308b &rarr;"
+  "jarbis100.btn": {
+    "en": "Explore Jarbis 100 &rarr;",
+    "ko": "Jarbis 100 \ub458\ub7ec\ubcf4\uae30 &rarr;",
+    "ja": "Jarbis 100\u3092\u898b\u308b &rarr;"
   },
   "install.title": {
     "en": "Get Started in Seconds",
@@ -1079,7 +1079,7 @@ const i18n = {
     "ja": "\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb"
   },
   "install.hint": {
-    "en": "Then just say: <strong style=\"color:var(--accent2)\">&ldquo;Build a harness for this project&rdquo;</strong>",
+    "en": "Then just say: <strong style=\"color:var(--accent2)\">&ldquo;Build a jarbis for this project&rdquo;</strong>",
     "ko": "\uadf8\ub9ac\uace0 \uc774\ub807\uac8c \ub9d0\ud558\uc138\uc694: <strong style=\"color:var(--accent2)\">&ldquo;\uc774 \ud504\ub85c\uc81d\ud2b8\uc5d0 \ud558\ub124\uc2a4 \uad6c\uc131\ud574\uc918&rdquo;</strong>",
     "ja": "\u3042\u3068\u306f\u4e00\u8a00: <strong style=\"color:var(--accent2)\">\u300c\u3053\u306e\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u30cf\u30fc\u30cd\u30b9\u3092\u69cb\u6210\u3057\u3066\u300d</strong>"
   },
@@ -1093,10 +1093,10 @@ const i18n = {
     "ko": "GitHub",
     "ja": "GitHub"
   },
-  "footer.harness100": {
-    "en": "Harness 100",
-    "ko": "Harness 100",
-    "ja": "Harness 100"
+  "footer.jarbis100": {
+    "en": "Jarbis 100",
+    "ko": "Jarbis 100",
+    "ja": "Jarbis 100"
   },
   "footer.research": {
     "en": "Research Paper",
@@ -1162,7 +1162,7 @@ const patternDataI18n = {
 function detectLang() {
   const hash = location.hash.replace('#', '').toLowerCase();
   if (['en', 'ko', 'ja'].includes(hash)) return hash;
-  const stored = localStorage.getItem('harness-lang');
+  const stored = localStorage.getItem('jarbis-lang');
   if (stored) return stored;
   const nav = (navigator.language || '').toLowerCase();
   if (nav.startsWith('ko')) return 'ko';
@@ -1173,7 +1173,7 @@ let currentLang = detectLang();
 
 function setLang(lang) {
   currentLang = lang;
-  localStorage.setItem('harness-lang', lang);
+  localStorage.setItem('jarbis-lang', lang);
   history.replaceState(null, '', '#' + lang);
   document.documentElement.lang = lang;
 
